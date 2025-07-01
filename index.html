@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+   <link rel="stylesheet" href="index.css ">
+  <meta charset="UTF-8">
+  <title>Roll Color Dice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+<body>
+
+  <!-- 🔊 Sound -->
+  <audio id="roll-sound" src="images/audio.mp3"></audio>
+
+  <!-- 🎥 Fullscreen Video -->
+  <div id="video-wrapper">
+    <video id="roll-video" autoplay muted playsinline></video>
+  </div>
+
+  <!-- 🔝 Top Image -->
+  <img src="images/dice bg ontop.png" alt="Top Image" class="top-image hide-on-roll">
+<br><br><br> <br>
+  <!-- 🎲 Dice Container -->
+  <div class="dice-container hide-on-roll">
+    <img src="images/roll-title.png" alt="ROLL COLOR DICE" class="title-image">
+     <br><br><br>
+    <div class="dropdowns">
+      <img src="images/4dice.jpg" alt="4 Dice" class="dice-option">
+      <img src="images/colordice.jpg" alt="Color Dice" class="dice-option">
+    </div>
+
+    <div class="dice-row">
+      <div class="dice green">•</div>
+      <div class="dice orange">•</div>
+      <div class="dice purple">•</div>
+      <div class="dice orange">•</div>
+    </div>
+<br><br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br> <br>
+    <!-- 🔁 Roll Again -->
+    <img src="images/roll again.jpg" alt="Roll Again" class="roll-button-img hide-on-roll">
+
+    <!-- 🎨 Possible Colors -->
+    <div class="possible-colors-container hide-on-roll">
+      <p class="possible-colors-text">
+        Possible colors:
+        <button class="color-button" style="color: red;" data-color="red">Red,</button>
+        <button class="color-button" style="color: orange;" data-color="orange">Orange,</button>
+        <button class="color-button" style="color: gold;" data-color="yellow">Yellow,</button>
+        <button class="color-button" style="color: green;" data-color="green">Green,</button>
+        <button class="color-button" style="color: blue;" data-color="blue">Blue,</button>
+        <button class="color-button" style="color: white;" data-color="white"> and </button>
+        <button class="color-button" style="color: purple;" data-color="purple">Purple.</button>
+            </p>
+    </div>
+  </div>
+   <script src="index.js"></script>  
+</body>
+</html>
